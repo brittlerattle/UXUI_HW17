@@ -117,11 +117,11 @@ body {
     font-size: 16px;
     margin: 2px 2px;
     border-radius: 50%;
-    background:  #5e5d5d url('../images/resume.svg') no-repeat center;
+    background:  rgb(255, 139, 30) url('../images/resumeblk.svg') no-repeat center;
   
   }
   .b1:hover {
-    background-color: white;
+    background:  white url('../images/resume.svg') no-repeat center;
     border: solid black 1px;
   }
 
@@ -137,11 +137,11 @@ body {
     font-size: 16px;
     margin: 2px 2px;
     border-radius: 50%;
-    background:  #5e5d5d url('../images/social.svg') no-repeat center;
+    background:  rgb(255, 139, 30) url('../images/socialblk.svg') no-repeat center;
   
   }
   .b2:hover {
-    background-color: white;
+    background: white url('../images/social.svg') no-repeat center;
     border: solid black 1px;
   }
   .b3 {
@@ -156,11 +156,11 @@ body {
     font-size: 16px;
     margin: 2px 2px;
     border-radius: 50%;
-    background:  #5e5d5d url('../images/contact.svg') no-repeat center;
+    background: rgb(255, 139, 30) url('../images/contactblk.svg') no-repeat center;
   
   }
   .b3:hover {
-    background-color: white;
+    background: white url('../images/contact.svg') no-repeat center;
     border: solid black 1px;
   }
   @media screen and (max-width: 500px) {
