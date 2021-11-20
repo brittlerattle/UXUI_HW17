@@ -123,7 +123,7 @@ body {
   }
   .b1:hover {
     background:  white url('../images/resume.svg') no-repeat center;
-    border: solid black 1px;
+    border: solid rgb(146, 146, 146) 1px;
   }
 
   .b2 {
@@ -143,7 +143,7 @@ body {
   }
   .b2:hover {
     background: white url('../images/social.svg') no-repeat center;
-    border: solid black 1px;
+    border: solid rgb(146, 146, 146) 1px;
   }
   .b3 {
     height: 60px;
@@ -162,7 +162,7 @@ body {
   }
   .b3:hover {
     background: white url('../images/contact.svg') no-repeat center;
-    border: solid black 1px;
+    border: solid rgb(146, 146, 146) 1px;
   }
   @media screen and (max-width: 500px) {
     .header a {
