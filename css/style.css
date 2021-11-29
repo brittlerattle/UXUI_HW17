@@ -186,6 +186,7 @@ font-weight: 250;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 10px;
   
 }
 
@@ -198,7 +199,7 @@ font-weight: 250;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .workLink3 {
@@ -210,7 +211,7 @@ font-weight: 250;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10px;
+  margin: 10px;
 }
 span {
  text-align: center;
