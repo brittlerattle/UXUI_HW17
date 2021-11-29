@@ -3,12 +3,20 @@ body {
 }
 h1 {
     font-family: "Spectral";
+    font-weight:700;
   }
 p {
     font-family: "Roboto";
-    font-weight:500;
+    font-weight:300;
+}
+ul {
+  font-family: "Roboto";
+  font-weight:300;
 }
 
+li {
+  margin-bottom: 10px;
+}
 /*header styling*/
 *{box-sizing: border-box;}
 body { 
@@ -23,8 +31,14 @@ body {
     background-image: url('../images/headerbg.png');
     height: 325px;
 }
+
+
+
   .header {
-      position: relative;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    width: 100%;
+    position: fixed;
     top: 90px;
     overflow: hidden;
     background-color: none;
@@ -46,7 +60,7 @@ body {
     font-size: 18px; 
     line-height: 25px;
     border-radius: none;
-    border-left: solid black 1px;
+    border-left: none;
   
   }
   
@@ -55,7 +69,8 @@ body {
     
   }
   .logo {
-    margin-left: 20px;
+    margin-left:none;
+    
   }
   .header a:hover {
     background-color: rgb(83, 83, 83);
@@ -75,14 +90,147 @@ body {
       padding-top: 25px;
     float: right;
     text-align: center;
-   
-/*body*/
   }
+/*body*/
+.sidebar {
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; 
+  left: 0;
+  background-color: white;
+  border: solid black 1px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  top: 220px;
+}
+.container {
+
+  overflow-x: hidden;
+  margin-left: 350px;
+  height: 750px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.9fr 1.1fr; 
+  gap: 4px 4px; 
+  grid-template-areas:  
+    "skills-image-one tallimage2"
+    "skillscopy tallimage2"; 
+}
+.skills-image-one { 
+  
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-image: url("/UXUI_HW17/images/skillsinpractice.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: skills-image-one; }
+
+.tallimage2 { 
+  margin: 20px;
+  background-image: url("/UXUI_HW17/images/ppe9sma.jpeg");
+  background-size: cover;
+  padding: 20px;
+  grid-area: tallimage2; }
+
+.skillscopy { 
+  color: white;
+  font-weight: 200;
+  padding: 20px;
+  background-color: rgb(83, 83, 83);
+  grid-area: skillscopy; }
+
+.orangeHeadline {
+  color:rgb(255, 139, 30);
+  font-family: "Spectral";
+    font-weight:700;
+    font-size: xx-large;
+}
+
+.whiteonGray {
+font-family: "roboto";
+font-weight: 250;
+}
+.workContainer {
+  margin-top: 20px;
+  margin-left: 350px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  
+
+}
+
+
+.workContainer > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  
+}
+.workLink1 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-image: url("/UXUI_HW17/images/smttile.png");
+  vertical-align: bottom;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.workLink2 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-image: url("/UXUI_HW17/images/fcctile.png");
+  vertical-align: bottom;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.workLink3 {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-image: url("/UXUI_HW17/images/hgtile.png");
+  vertical-align: bottom;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
+}
+span {
+ text-align: center;
+ font-family: 'Roboto';
+ font-size: large;
+ color: white;
+ text-shadow: 2px 2px 2px black;
+ 
+  
+}
+a:link {
+  text-decoration: none;
+}
+
   .hero {
     height:700px;
+    position: absolute;
+    top: 325px;
   }
   /*footer*/
   .footer {
+    z-index: 3;
     display: inline-block;
     overflow: hidden;
     position: fixed;
@@ -178,12 +326,22 @@ body {
         
  @media screen and (max-height: 1000px) {
         .hero {
+          position: absolute;
+          top: 200px;
           height: 400px;
         }
+        .sidebar {
+          top: 160px;
+        }
         .headerHolder {
+          
           height: 200px;
         }
         .header {
+          
           top: 20px;
         }
-      }
+        .container {
+          height: 600px;
+        }
+        }
