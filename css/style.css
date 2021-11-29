@@ -4,6 +4,8 @@ body {
 h1 {
     font-family: "Spectral";
     font-weight:700;
+    line-height: 85%;
+    text-align: center;
   }
 p {
     font-family: "Roboto";
@@ -215,7 +217,7 @@ span {
  font-family: 'Roboto';
  font-size: large;
  color: white;
- text-shadow: 2px 2px 2px black;
+ text-shadow: none;
  
   
 }
